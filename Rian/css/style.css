@@ -1,0 +1,85 @@
+
+
+
+
+:root {
+    --animate-delay: 0s;
+    --purple: #634bbd
+
+}
+
+body {
+    height: auto;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Croissant One';
+}
+
+.cover {
+    width: auto;
+    min-height: 100vh;
+	position: relative;
+    margin: 0px;
+	padding: 0px;
+    background: url(/img/test-0.png) no-repeat, url(/img/9-min.jpg) repeat;
+    background-position: bottom, center;
+    background-position-y: -80%, 72%;
+    background-size: cover, cover;
+}
+
+
+/* .cover h1, h3, p{
+} */
+
+.cover h1 {
+    font-family:'dancing-script';
+    font-weight: 600;
+    font-size: 6.6rem;
+    color: white;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    text-shadow: 2px 1px black, -2px -1px black, 2px -1px black, -2px 1px black;
+}
+
+.cover .male {
+    transform: translateY(80px) translateX(-78px);
+}
+
+.cover .span {
+    transform: translateY(45px) translateX(10px);
+}   
+
+.cover .female {
+    transform: translateY(15px) translateX(68px);
+}
+
+.cover .cover-text {
+    transform: translateY(-10px);
+}
+
+.cover p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cover h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.prolog {
+    min-height: 100vh;
+	position: relative;
+	padding: 0px;
+    background-color: pink;
+}
+
+.home {
+    min-height: 100vh;
+	position: relative;
+	padding: 0px;
+    background-color: white;
+  
+}
