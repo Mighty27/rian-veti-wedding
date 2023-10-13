@@ -10,76 +10,9 @@
 
 body {
     height: 100vh;
-	width: 100vh;
     margin: 0px;
     padding: 0px;
     font-family: 'Croissant One';
     overflow-x: hidden;
     color: white!important;
-}
-
-.cover {
-    width: auto;
-    min-height: 100vh;
-	position: relative;
-    margin: 0px;
-	padding: 0px;
-    background:url(/img/photos/7-min.jpg) repeat;
-    background-position:center;
-    background-position-y:72%;
-    background-size:cover;
-}
-
-
-/* .cover h1, h3, p{
-} */
-
-.cover h1 {
-    font-family:'dancing-script';
-    font-weight: 600;
-    font-size: 6.6rem;
-    color: white;
-    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
-    text-shadow: 2px 1px black, -2px -1px black, 2px -1px black, -2px 1px black;
-}
-
-.cover .male {
-    transform: translateY(80px) translateX(-78px);
-}
-
-.cover .span {
-    transform: translateY(45px) translateX(10px);
-}   
-
-.cover .female {
-    transform: translateY(15px) translateX(68px);
-}
-
-.cover .cover-text {
-    transform: translateY(-10px);
-}
-
-.cover p{
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.cover h3 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: white;
-}
-
-.cover .btn {
-    background-color: #5B0888;
-    color: wheat;
-}
-
-.cover .btn:hover {
-    background-color: #5D12D2;
-}
-
-.prolog {
 }
