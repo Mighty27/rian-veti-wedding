@@ -84,7 +84,7 @@ body {
 .prolog {
     height: 100vh;
     width: auto;
-    background: url(/img/bg-2-1.jpg);
+    background: url(/img/background/bg-2-1.jpg);
     background-position: center;
     background-size: cover;
 }
