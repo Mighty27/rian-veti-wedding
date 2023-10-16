@@ -59,7 +59,27 @@
       </div>
     </section>
 
+    
+
     <section id="content" class="content">
+      <nav class="navbar sticky-top bg-body-tertiary">
+        <div class="container-fluid justify-content-center">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div class="container">
         
       </div> 
@@ -78,6 +98,7 @@
         window.onscroll = function () {
           window.scrollTo(scrollTop, scrollLeft);
         };
+        document.querySelector(".navbar").classList.add("invisible");
         document.body.style.overflowY = "hidden";
         rootElement.style.scrollBehavior = "auto";
       }
@@ -100,6 +121,7 @@
         setTimeout(() => {
           coverAction.classList.add("invisible");
           document.body.style.overflowY = "scroll";
+          document.querySelector(".navbar").classList.remove("invisible");
         }, 2000);
       });
 
