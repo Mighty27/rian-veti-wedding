@@ -230,12 +230,20 @@
       const rowAnimation = document.querySelector(".row");
 
       function disableScroll() {
-        document.querySelector(".navbar").classList.add("invisible");
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
         document.body.style.overflowY = "hidden";
+        rootElement.style.scrollBehavior = "auto";
+        document.querySelector(".navbar").classList.add("invisible");
       }
 
       function enableScroll() {
-        document.body.style.overflowY = "scroll";
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
       }
 
       coverButton.addEventListener("click", function () {
