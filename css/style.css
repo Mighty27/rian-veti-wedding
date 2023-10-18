@@ -60,35 +60,144 @@ body {
     font-size: 1.8rem;
 }
 
-.first h1 {
-    font-size: 2rem;
+.male-first, .female-first {
+    font-family: "Dancing Script";
+    font-size: 4rem;
+}
+
+.navbar {
+    background-color: rgba(185, 49, 252, 0.6)!important;
+    backdrop-filter: blur(2px);
 }
 
 .main {
-    padding: 0px;
-    margin: 0px;
+    margin-top: -4.rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     width: 100%;
 	height: auto;
     background: url(/img/background/bg-elemet-3.png) no-repeat, url(/img/background/bg-11.jpg) no-repeat;
     background-position: right, center;
     background-size: contain, cover;
-    background-attachment: fixed, fixed;
+    background-attachment: scroll, fixed;
 }
 
-.couples .row {
-    margin-top: 30px!important;
+.main .container {
+    margin-left: -1.1rem;
 }
 
-.couples .card {
-    padding: 0px!important;
-    margin: 0px!important;
+.main .card {
+    background-color: rgba(185, 49, 252, 0.4);
 }
 
+.main h2 {
+    font-family: "dancing script";
+}
 
-.couple img {
+.information {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+	height: auto;
+    background: url(/img/background/bg-element-8.png) no-repeat, url(/img/background/bg-element-9.png) no-repeat, url(/img/photos/img-6.jpg) no-repeat;
+    background-position: top right, bottom left, center;
+    background-size: 40%, 25%, cover;
+    background-attachment: scroll, scroll, fixed;
+}
+
+
+.information .fs-1 {
+    font-size: 0.8rem!important;
+}
+
+.information .card {
+    width: 60%;
+    background-color: rgba(185, 49, 252, 0.4);
+    backdrop-filter: blur(2px);
+    color: white;
+}
+
+.gallery {
+    width: 100%;
+    padding: 25px;
+    background: url(/img/background/bg-13.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.gallery .card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    backdrop-filter: blur(2px);
+}
+
+.gifts {
+    padding: 20px;
+    background: url(/img/background/bg-13.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.gifts .card {
+    width: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: url(/img/photos/img-8.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: center;
+}
+
+
+
+.copy-button:hover {
+    background: 0;
+    border: 0;
+    color: pink;
+}
+
+.copy-button {
+    background: 0;
+    border: 0;
+    color: white;
+}
+
+.in-card {
+    background-color: rgba(185, 49, 252, 0.4);
+}
+
+.btn{
+ color: white!important;
+ 
+}
+
+.btn:hover {
+color: rgba(185, 49, 252, 1)!important;
+
+}
+
+.bg-dark-purple {
+    background-color: rgba(67, 17, 92, 0.8);
+}
+
+.content-gift {
+        
+}
+
+.content-gift .card {
+    background: none!important;
+}
+.content-gift h1 {
+    font-size: 100.0px;
+    margin-bottom: 4rem;
+}
+
+.mandiri {
+    width: 40%!important;
 }
 
 /* Media Query */
@@ -137,5 +246,37 @@ body {
         background-size: 50%, 50%, cover;
     }
 
+    .main{
+        background-attachment: fixed, fixed;
+    }
 
+
+    .main .container {
+        margin-left: 0;
+    }
+
+    .fix-1 {
+        
+    }
+    
+
+
+}
+
+@media (max-width: 425px) {
+    .fix-1 {
+        transform: translateX(34.50px);
+    }
+}
+
+@media (max-width: 375px) {
+    .fix-1 {
+        transform: translateX(17px);
+    }
+}
+
+@media (max-width: 320px) {
+    .fix-1 {
+        transform: translateX(0);
+    }
 }
