@@ -59,7 +59,7 @@
 
     <section
       id="cover"
-      class="cover z-1 position-absolute d-flex align-items-center animate__animated"
+      class=" cover z-1 position-absolute d-flex align-items-center animate__animated"
     >
       <div class="container text-center">
         <div class="row row-animation animate__animated">
@@ -115,13 +115,13 @@
           <div class="col">
             <h1 class="male-first">Rian Satria Agung Saputra S.E</h1>
             <p>&</p>
-            <h1 class="female-first">Peti Marcella</h1>
+            <h1 class="female-first">Peti Marsela S. Pd</h1>
           </div>
         </div>
       </div>
     </section>
 
-    <nav id="navbar-example2" class="navbar sticky-top" data-aos="fade-left">
+    <nav id="navbar-example2" class="navbar sticky-top" data-aos="fade-right">
       <div class="col-auto anto" style="padding-left: 50px; padding-right: 30px;">
         <a class="navbar-brand" href="#" style="font-family: dancing script;">Rian & Peti</a>
       </div>
@@ -170,9 +170,7 @@
         </div>
         <div class="container d-flex justify-content-center">
           <div class="row align-items-center justify-content-center">
-            <div class="col-md-4 col-sm-12 " data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
+            <div class="col-md-4 col-sm-12 " data-aos="fade-up">
               <div class="card">
                 <div class="card-body text-center">
                   <img
@@ -195,9 +193,7 @@
             data-aos-offset="0">
               <img src="/img/element/element-9.png" alt="" width="100%" />
             </div>
-            <div class="col-md-4 col-sm-12" data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
+            <div class="col-md-4 col-sm-12" data-aos="fade-down">
               <div class="card">
                 <div class="card-body text-center">
                   <img
@@ -515,7 +511,7 @@
       function disableScroll() {
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
+        
         window.onscroll = function () {
           window.scrollTo(scrollTop, scrollLeft);
         };
@@ -523,9 +519,13 @@
         rootElement.style.scrollBehavior = "auto";
         document.querySelector(".navbar").classList.add("invisible");
       }
-
+      
       function enableScroll() {
-        window.onscroll = function () {};
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        window.onscroll = function () {
+          window.scrollTo(crollLeft);
+        };
+        document.body.style.overflowX = "hidden";
         rootElement.style.scrollBehavior = "smooth";
       }
 
@@ -538,7 +538,7 @@
           .classList.add("animate__fadeOutRight");
         setTimeout(() => {
           rowAnimation.classList.add("animate__fadeOutDown");
-          coverAction.classList.add("animate__hinge");
+          coverAction.classList.add("animate__fadeOutUp");
         }, 450);
         setTimeout(() => {
           music.play();
