@@ -458,6 +458,15 @@ color: rgba(185, 49, 252, 1)!important;
         
     }
     
+    .anto {
+        padding-right: 0!important;
+        font-size: 1.4rem;
+        padding-left: 10px!important;
+    }
+
+    .mygreat {
+        padding-right: 10px!important;
+    }
 
 
 }
@@ -466,6 +475,7 @@ color: rgba(185, 49, 252, 1)!important;
     .fix-1 {
         transform: translateX(34.50px);
     }
+
 }
 
 @media (max-width: 375px) {
